@@ -1,7 +1,7 @@
 function sumAllPrime(num) {
     let primeSum = 0;
-    for (let i = 2; i < num; i++) {
-        for (let j = 2; j < num; j++) {
+    for (let i = 2; i <= num; i++) {
+        for (let j = 2; j <= i; j++) {
             if (i === j) {
                 primeSum += i
             }
@@ -14,11 +14,6 @@ function sumAllPrime(num) {
     return primeSum;
 }
 
-console.log(sumAllPrime(10));
-
-// let a = 4;
-// let b = 1;
-
-// console.log(a % b);
+console.log(sumAllPrime(5));
 
 
